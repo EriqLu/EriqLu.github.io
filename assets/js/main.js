@@ -132,5 +132,55 @@
 		});
 	});
 	
+
+	// document.addEventListener("DOMContentLoaded", function() {
+	// 	const contactButtons = document.querySelectorAll(".contact-btn");
+	// 	const contactForm = document.getElementById("contact-form");
+	// 	const subjectInput = document.getElementById("subject");
+	
+	// 	// Show form when Contact Me button is clicked
+	// 	contactButtons.forEach(button => {
+	// 		button.addEventListener("click", function() {
+	// 			const serviceTitle = this.closest(".resume-box").querySelector("h3").innerText;
+	// 			subjectInput.value = `Inquiry about: ${serviceTitle}`;
+	// 			contactForm.classList.remove("hidden");
+	// 			window.scrollTo({ top: contactForm.offsetTop, behavior: "smooth" });
+	// 		});
+	// 	});
+	
+	// 	// Handle form submission
+	// 	document.getElementById("contactForm").addEventListener("submit", function(event) {
+	// 		event.preventDefault(); // Prevent default form submission
+	
+	// 		const formData = new FormData(this);
+			
+	// 		// Validate email input
+	// 		const emailInput = document.getElementById("email").value;
+	// 		if (!emailInput.includes("@")) {
+	// 			alert("Please enter a valid email address.");
+	// 			return;
+	// 		}
+	
+	// 		fetch("https://formsubmit.co/1234eriq@gmail.com", {
+	// 			method: "POST",
+	// 			body: formData
+	// 		})
+	// 		.then(response => response.text()) // Read response as text
+	// 		.then(data => {
+	// 			if (data.includes("success") || data.toLowerCase().includes("thank you")) { 
+	// 				alert("Message sent successfully! ✅");
+	// 				contactForm.reset();
+	// 				contactForm.classList.add("hidden"); // Hide form after sending
+	// 			} else {
+	// 				throw new Error("Unexpected response from server");
+	// 			}
+	// 		})
+	// 		.catch(error => {
+	// 			console.error("Error:", error);
+	// 			alert("Failed to send message. Please check FormSubmit setup.");
+	// 		});
+	// 	});
+	// });
+
 	
 })(jQuery);
